@@ -73,7 +73,7 @@ class ComicController extends Controller
     {
         $data = [
             'comic' => $comic,
-            'title' => 'Comics Database Homepage'
+            'title' => $comic->title
         ];
 
         return view('comics.show', $data);

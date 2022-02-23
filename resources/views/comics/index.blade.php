@@ -1,3 +1,5 @@
+@extends('layouts.base')
+
 @section('documentTitle')
     {{ $title }}
 @endsection

@@ -71,7 +71,12 @@ class ComicController extends Controller
      */
     public function show(Comic $comic)
     {
-        //
+        $data = [
+            'comic' => $comic,
+            'title' => 'Comics Database Homepage'
+        ];
+
+        return view('comics.show', $data);
     }
 
     /**

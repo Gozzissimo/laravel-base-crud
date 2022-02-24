@@ -44,18 +44,10 @@ class ComicController extends Controller
     {
         $dataArray = $request->all();
         $comic = new Comic();
-        $comic->isbn = $dataArray['isbn'];
-        $comic->title = $dataArray['title'];
-        $comic->number = $dataArray['number'];
-        $comic->author = $dataArray['author'];
-        $comic->format = $dataArray['format'];
-        $comic->publisher = $dataArray['publisher'];
-        $comic->edition = $dataArray['edition'];
-        $comic->language = $dataArray['language'];
-        $comic->pages = $dataArray['pages'];
-        $comic->price = $dataArray['price'];
-        
+        $comic->fill($dataArray);
+
         $save = $comic->save();
+        
         if (!$save) {
             dd('Qualquadra non cosa');
         }

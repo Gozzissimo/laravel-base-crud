@@ -99,7 +99,17 @@ class ComicController extends Controller
      */
     public function update(Request $request, Comic $comic)
     {
-        //
+        $dataArray = $request->all();
+        $comic = new Comic();
+        $comic->update($dataArray);
+
+        $update = $comic->update();
+
+        if (!$update) {
+            dd('Qualquadra non cosa');
+        }
+
+        return redirect()->route('comics.show', $comic->id);
     }
 
     /**

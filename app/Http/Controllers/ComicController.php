@@ -9,9 +9,9 @@ class ComicController extends Controller
 {
     public function home() {
 
-        dd('Homepage');
+        
 
-        return view('home');
+        return view('home', ['title' => 'Home']);
     }
 
     /**
@@ -24,7 +24,7 @@ class ComicController extends Controller
         $comics = Comic::paginate(20);
         $data = [
             'comics' => $comics,
-            'title' => 'Comics Database Homepage'
+            'title' => 'Comics Database'
         ];
 
         return view('comics.index', $data);

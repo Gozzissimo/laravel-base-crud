@@ -5,5 +5,5 @@
 @endsection
 
 @section('content')
-    CIAO
+    Questa è l'homepage
 @endsection

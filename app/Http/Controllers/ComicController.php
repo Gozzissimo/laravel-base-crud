@@ -7,6 +7,13 @@ use Illuminate\Http\Request;
 
 class ComicController extends Controller
 {
+    public function home() {
+
+        dd('Homepage');
+
+        return view('home');
+    }
+
     /**
      * Display a listing of the resource.
      *

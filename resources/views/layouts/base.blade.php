@@ -12,34 +12,24 @@
 <body>
     <div class="d-flex">
         <header class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark">
-            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            <h1 class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-primary">
                 <span class="fs-4">Comics Dashboard</span>
-            </a>
+            </h1>
             <hr>
             <ul class="nav flex-column mb-auto">
                 <li>
-                    <a href="#" class="nav-link text-white">
+                    <a href="/" class="nav-link text-white">
                         Home
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="nav-link text-white">
-                        Dashboard
+                    <a href="{{ route('comics.index') }}" class="nav-link text-white">
+                        DB Comics
                     </a>
                 </li>
                 <li>
                     <a href="#" class="nav-link text-white">
-                        Orders
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link text-white">
-                        Products
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link text-white">
-                        Customers
+                        Edit Comic
                     </a>
                 </li>
             </ul>
@@ -48,9 +38,6 @@
             @yield('content')
         </main>
 
-        <footer>
-            
-        </footer>
     </div>
 
 </body>

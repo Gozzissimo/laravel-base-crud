@@ -14,7 +14,7 @@
         <div class="row">
             <form action="{{ route('comics.update', [$comic->id]) }}" method="post">
                 @csrf
-                @method('PUT')
+                    
 
                 <div class="mb-3">
                     <label for="isbn" class="form-label">ISBN</label>

@@ -10,17 +10,49 @@
 </head>
 
 <body>
-    <header class="container">
-        <div class="row">
-            <div class="col-6">
-                <h1>Administrator</h1>
-            </div>
-            <div class="col-6">
+    <div class="d-flex">
+        <header class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark">
+            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                <span class="fs-4">Comics Dashboard</span>
+            </a>
+            <hr>
+            <ul class="nav flex-column mb-auto">
+                <li>
+                    <a href="#" class="nav-link text-white">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link text-white">
+                        Dashboard
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link text-white">
+                        Orders
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link text-white">
+                        Products
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link text-white">
+                        Customers
+                    </a>
+                </li>
+            </ul>
+        </header>
+        <main>
+            @yield('content')
+        </main>
 
-            </div>
-        </div>
-    </header>
-    @yield('content')
+        <footer>
+            
+        </footer>
+    </div>
+
 </body>
 
 </html>

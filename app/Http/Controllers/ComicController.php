@@ -11,7 +11,7 @@ class ComicController extends Controller
 
         
 
-        return view('home', ['title' => 'Home']);
+        return view('comics.home', ['title' => 'Home']);
     }
 
     /**

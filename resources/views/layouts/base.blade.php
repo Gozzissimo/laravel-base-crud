@@ -27,11 +27,6 @@
                         DB Comics
                     </a>
                 </li>
-                <li>
-                    <a href="#" class="nav-link text-white">
-                        Edit Comic
-                    </a>
-                </li>
             </ul>
         </header>
         <main>
